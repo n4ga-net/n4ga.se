@@ -16,7 +16,7 @@ body {
 
 .fox {
   display: block;
-  height: min(100svh, 100vw);
+  height: min(50svh, 50vw);
   object-fit: contain;
-  width: min(100svh, 100vw);
+  width: min(50svh, 50vw);
 }
