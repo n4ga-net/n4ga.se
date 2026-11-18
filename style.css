@@ -1,88 +1,22 @@
-:root {
-  color-scheme: dark;
-  --nord0: #2e3440;
-  --nord1: #3b4252;
-  --nord3: #4c566a;
-  --nord4: #d8dee9;
-  --nord6: #eceff4;
-  --nord8: #88c0d0;
-  --nord14: #a3be8c;
-}
+:root { color-scheme: dark; }
 
 * { box-sizing: border-box; }
 
 html, body { min-height: 100%; }
 
 body {
-  margin: 0;
-  background: var(--nord0);
-  color: var(--nord6);
-  font-family: "Inter", "Avenir Next", Avenir, "Segoe UI", sans-serif;
-}
-
-body::before {
-  background: linear-gradient(135deg, rgba(136, 192, 208, .08), transparent 42%);
-  content: "";
-  inset: 0;
-  pointer-events: none;
-  position: fixed;
-}
-
-.shell {
-  align-items: flex-start;
+  align-items: center;
+  background: #2e3440;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: auto;
-  min-height: 100svh;
-  max-width: 760px;
-  padding: 8vh 8vw;
-}
-
-.mark-wrap {
-  background: var(--nord1);
-  border: 1px solid rgba(216, 222, 233, .12);
-  border-radius: 28px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, .22);
-  margin-bottom: 42px;
-  padding: 20px;
-}
-
-.mark { display: block; height: 128px; width: 128px; }
-
-.eyebrow {
-  color: var(--nord8);
-  font-size: .78rem;
-  font-weight: 700;
-  letter-spacing: .24em;
-  margin: 0 0 18px;
-}
-
-h1 {
-  font-size: clamp(3rem, 8vw, 6.4rem);
-  font-weight: 650;
-  letter-spacing: -.065em;
-  line-height: .96;
   margin: 0;
-  max-width: 700px;
+  min-height: 100svh;
+  overflow: hidden;
 }
 
-.lede {
-  color: var(--nord4);
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  line-height: 1.6;
-  margin: 32px 0 0;
-  max-width: 470px;
-}
-
-.rule { background: var(--nord3); height: 1px; margin: 48px 0 20px; width: min(100%, 470px); }
-
-.status { color: var(--nord4); font-size: .85rem; letter-spacing: .04em; margin: 0; }
-
-.dot { background: var(--nord14); border-radius: 50%; display: inline-block; height: 8px; margin-right: 9px; width: 8px; }
-
-@media (max-width: 520px) {
-  .shell { padding: 48px 28px; }
-  .mark-wrap { margin-bottom: 34px; }
-  .mark { height: 104px; width: 104px; }
+.fox {
+  display: block;
+  height: min(100svh, 100vw);
+  object-fit: contain;
+  width: min(100svh, 100vw);
 }
