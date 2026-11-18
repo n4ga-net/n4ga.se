@@ -21,9 +21,10 @@ body {
 
 .fox {
   display: block;
-  height: min(50svh, 50vw);
+  height: min(50svh, 72vw);
+  max-width: 72vw;
   object-fit: contain;
-  width: min(50svh, 50vw);
+  width: auto;
 }
 
 .splash p {
@@ -31,5 +32,5 @@ body {
   font-family: "Inter", "Avenir Next", Avenir, "Segoe UI", sans-serif;
   font-size: clamp(1rem, 2vw, 1.4rem);
   letter-spacing: .08em;
-  margin: 1.25rem 0 0;
+  margin: .5rem 0 0;
 }
